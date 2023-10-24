@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Changing Background Color of textbox</title>
+  <script>
+    function BackgroundColor() {
+      var colors = ["#FF5733", "#33FF57", "#5733FF", "#33A9FF", "#FF33C7"];
+      var randomIndex = Math.floor(Math.random() * colors.length);
+      var textbox = document.getElementById("colorTextbox");
+      textbox.style.backgroundColor = colors[randomIndex];
+    }
+  </script>
+</head>
+<body onload="BackgroundColor()">
+  <input type="text" id="colorTextbox" placeholder="Type something....!">
+</body>
+</html>
+
